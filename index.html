@@ -568,6 +568,26 @@
               </li>
             </ul>
           </div>
+          <div class="mailing-footer-container">
+             <ul>
+              <li> 
+                <p class="mailing-text">Підпишіться на розсилку</p>
+              </li>
+              <li>
+                <form action="footer-mailing-form">
+                  <label for="mailing-field"></label>
+                  <input class="mailing-mail-input" type="email" name="" id="mailing-field" placeholder="E-mail">
+                  <button class="mailing-submit-button" type="submit">
+                      <div class="button-mailing-container">
+                        Підписатися
+                        <svg class="icon icon-telegramIcon mailing-icon"><use xlink:href="./img/page1/icons/sprite.svg#icon-telegramIcon"></use></svg>
+                      </div>
+                  </button>
+                </form>
+              </li>
+             </ul>
+              
+          </div>
         </div>
       </div>
     </footer>
@@ -577,7 +597,61 @@
     <div data-modal class="header-backdrop is-hidden">
       <div class="modal-container">
         <div class="modal-sectoin">
-          <button data-modal-close class="btn-modal-close"></button>
+          <button data-modal-close class="btn-modal-close">
+            <svg class="icon icon-closeModalIcon close-modal-icon">
+              <use
+                href="./img/page1/icons/sprite.svg#icon-closeModalIcon"
+              ></use>
+            </svg>
+          </button>
+          <div class="modal-content-container">
+            <h2 class="modal-header">Залиште свої дані, ми вам передзвонимо</h2>
+            <form action="feedback_form">
+              <ul class="modal-form-list">
+
+                <li>
+                  <label class="form-area" for="name-field">
+                    <p class="input-descr">Ім'я</p>
+                  </label type="name">
+                        <div class="input-container"><input class="input-field input-main-fields" type="text" name="username" id="name-field"/>
+                        <svg class="icon icon-modal-form"><use href="./img/page1/icons/sprite.svg#icon-userIcon"></use></svg>
+                        </div>
+                </li>
+
+                <li>
+                  <label class="form-area" for="tel-field">
+                    <p class="input-descr">Телефон</p>
+                  </label type="tel">
+                        <div class="input-container"><input class="input-field input-main-fields" type="tel" name="tel" id="tel-field" />
+                        <svg class="icon icon-modal-form"><use href="./img/page1/icons/sprite.svg#icon-phoneIcon"></use></svg>
+                        </div>
+                </li>
+
+                <li>
+                  <label  class="form-area" for="mail-field"> 
+                    <p class="input-descr">Пошта</p>
+                  </label type="email">
+                        <div class="input-container"><input class="input-field input-main-fields" type="email" name="email" id="mail-field"/>
+                        <svg class="icon icon-modal-form"><use href="./img/page1/icons/sprite.svg#icon-mailIcon"></use></svg>
+                        </div>
+                </li>
+
+                <li>
+                  <label class="form-area" for="comment-field">
+                    <p class="input-descr">Коментар</p>
+                  </label>
+                        <textarea class="input-field text-area" name="comment" rows="6" placeholder="Введіть текст" id="comment-field"></textarea>
+                </li>
+                </ul>
+
+                <div class="checkbox-container">
+                  <input class="checkbox-input" type="checkbox" name="" id="policy">
+                  <label class="checkbox-label" for="policy"><span class="checkbox-main-text">Погоджуюся з розсилкою та приймаю</span> <a class="checkbox-policy-link" href="#">Умови договору</a></label>
+                </div>
+                <button class="form-button" type="submit">Відправити</button>
+            </form>
+          </div>
+          
         </div>
       </div>
     </div>
